@@ -1,3 +1,4 @@
+import ContactSection from "../components/sections/ContactSection";
 import BlogSection from "../components/sections/BlogSection";
 import ReviewsSection from "../components/sections/ReviewsSection";
 import VisionMissionSection from "../components/sections/VisionMissionSection";
@@ -29,6 +30,7 @@ export default function LandingPage() {
         <StatsPartnersSection />
 
         <BlogSection />
+        <ContactSection />
 
         <ReviewsSection />
 

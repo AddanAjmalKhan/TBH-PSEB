@@ -43,15 +43,30 @@ const activities = [
 const WhatWeDoSection = () => {
   return (
     <section className="bg-[#8b0000] py-20 px-6">
-      <h2 className="text-white text-4xl font-bold text-center mb-14">
-        WHAT WE DO
-      </h2>
+      
+      {/* Section Header */}
+      <div className="text-center mb-16">
+        {/* Small white line */}
+        <span className="inline-block w-12 h-1 bg-white rounded-full mb-4"></span>
 
+        <h2 className="text-white text-4xl font-bold tracking-wide">
+          WHAT WE DO
+        </h2>
+
+        {/* Subtle glow divider (optional but beautiful) */}
+        <div className="mt-3 flex justify-center">
+          <span className="w-24 h-px bg-white/40"></span>
+        </div>
+      </div>
+
+      {/* Cards */}
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {activities.map((item, index) => (
           <div
             key={index}
-            className="bg-[#a11212] rounded-2xl p-6 text-white hover:-translate-y-2 transition-transform duration-300"
+            className="bg-[#a11212] rounded-2xl p-6 text-white
+                       hover:-translate-y-2 hover:shadow-2xl
+                       transition-all duration-300 ease-out"
           >
             <img
               src={item.img}
